@@ -50,15 +50,11 @@ app.post('/signin', (req, res) => {
 })
 
 app.post('/register', (req, res) => {
-    // const {email, name, password } = req.body;
-    // bcrypt.hash(password,  null, null, function(err, hash) {
-    //     console.log(hash)
-    // })
+    const { email, name, password } = req.body
     database.users.push({
         id: '125',
         name: name,
         email: email,
-        password: password,
         entries: 0,
         joined: new Date()
     })
