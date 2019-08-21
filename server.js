@@ -9,7 +9,7 @@ const database = {
     users: [
         {
             id: '123',
-            name: 'bolaji',
+            name: 'Bolaji',
             password: "cook",
             email: 'bolaji@gmail.com',
             entries: 0,
@@ -17,7 +17,7 @@ const database = {
         },
         {
             id: '124',
-            name: 'david',
+            name: 'David',
             password: "stew",
             email: 'david@gmail.com',
             entries: 0,
@@ -43,7 +43,7 @@ app.get('/', (req, res) => {
 app.post('/signin', (req, res) => {
     if (req.body.email === database.users[0].email &&
         req.body.password === database.users[0].password) {
-            res.json('success')
+            res.json(database.users[0]);
         } else {
             res.status(400).json('error logging in')
         }
