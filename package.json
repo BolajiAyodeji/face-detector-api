@@ -4,7 +4,8 @@
   "description": "Face detector API",
   "main": "server.js",
   "scripts": {
-    "start": "nodemon server.js"
+    "start": "nodemon server.js",
+    "deploy": "git push && git push heroku master"
   },
   "repository": {
     "type": "git",
