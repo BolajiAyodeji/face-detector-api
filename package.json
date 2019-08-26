@@ -2,7 +2,7 @@
   "name": "face-detector-api",
   "version": "1.0.0",
   "description": "Face detector API",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "start": "nodemon server.js"
   },
