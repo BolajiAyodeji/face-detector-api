@@ -30,7 +30,7 @@ app.post('/signin', signin.handleSignin(db, bcrypt))
 app.post('/register', register.handleRegister(db, bcrypt))
 app.get('/profile/:id', profile.handleProfile(db))
 app.put('/image', image.handleImage(db))
-app.post('/imageurl', (req,res) => { image.handleApi(req, res)})
+app.post('/imageurl', (req, res) => { image.handleApi(req, res) })
 
 app.listen(3100, () => {
     console.log('app is running on port 3100')
