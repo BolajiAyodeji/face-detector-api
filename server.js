@@ -1,4 +1,5 @@
 const express = require('express');
+const pingmydyno = ('pingmydyno');
 const bodyParser = require('body-parser');
 const bcrypt = require('bcrypt-nodejs')
 const cors = require('cors');
@@ -31,6 +32,8 @@ app.get('/profile/:id', profile.handleProfile(db))
 app.put('/image', image.handleImage(db))
 app.post('/imageurl', (req, res) => { image.handleApi(req, res) })
 
+
 app.listen(process.env.PORT || 5000, () => {
+    pingmydyno('https://b-face-detector-api.herokuapp.com/');
     console.log(`App is running on port ${process.env.PORT}`)
-})
+});
