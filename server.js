@@ -1,5 +1,5 @@
 const express = require('express');
-const pingmydyno = ('pingmydyno');
+const pingmydyno = require('pingmydyno');
 const bodyParser = require('body-parser');
 const bcrypt = require('bcrypt-nodejs')
 const cors = require('cors');
